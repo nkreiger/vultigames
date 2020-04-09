@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package game;
+
+service Status {
+	rpc test (StatusRequest) returns (StatusResponse) {}
+}
+
+message StatusRequest {
+	string check = 1;
+}
+
+message StatusResponse {
+	string status = 1;
+}
