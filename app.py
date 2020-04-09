@@ -1,5 +1,5 @@
+# flask api
 from flask import Flask, request
-import json
 
 # services
 from services.game import BlackjackGame
@@ -7,7 +7,6 @@ from services.game import BlackjackGame
 app = Flask(__name__)
 
 blackJack = BlackjackGame()
-
 
 @app.route('/')
 def hello_world():
